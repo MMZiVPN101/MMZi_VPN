@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>MMZi VPN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: #f0f2f5;
+      direction: rtl;
+      text-align: center;
+      padding: 50px 10px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      margin: auto;
+      border-radius: 15px;
+      max-width: 600px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007bff;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      direction: ltr;
+      resize: none;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🛡️ MMZi VPN</h1>
+    <p>برای اتصال رایگان به اینترنت، از کانفیگ زیر استفاده کنید:</p>
+    <textarea id="config" readonly>vless://63005378-e32e-4e23-bc6e-84812f147a6f@172.66.47.138:443?path=%2F--JoiN--%40FREEV2RNG--Bia--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN--%40MMZi_VPN%3Fed%3D2560&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=configmr.pages.dev&fp=randomized&type=ws&sni=ConFIgmr.PaGeS.dEV#📛@MMZi_VPN</textarea>
+    <button onclick="copyConfig()">📋 کپی کانفیگ</button>
+    <a href="https://t.me/MMZi_VPN" target="_blank">عضویت در کانال تلگرام</a>
+  </div>
+
+  <script>
+    function copyConfig() {
+      const config = document.getElementById('config');
+      config.select();
+      config.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("✅ کانفیگ کپی شد!");
+    }
+  </script>
+</body>
+</html>
